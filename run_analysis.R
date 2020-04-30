@@ -160,8 +160,8 @@ smartphone_records_average <- smartphone_records %>%
 
 #Writing the final dataset into my working directory
 write_csv(smartphone_records_average, "Smartphone Records Average.csv")
-write_delim(smartphone_records_average, "Smartphone Records Average.txt")
-
+write.table(smartphone_records_average, "Smartphone Records Average.txt", 
+            row.names = FALSE, sep = " ")
 
 
 ###Appendix: In case you want to read the saved file SMARTPHONERECORDSAVERAGE, run the below code
